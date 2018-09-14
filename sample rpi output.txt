@@ -1,0 +1,26 @@
+Tue Sep  4 19:27:33 2018 - The key to make it work is to have the CE Pin wired correctly, ensure that that all setting match (RX_ADDR_P*, Data Rate, CRC & radio addresses)
+================ SPI Configuration ================
+CSN Pin          = CE0 (PI Hardware Driven)
+CE Pin           = Custom GPIO22
+Clock Speed      = 8 Mhz
+================ NRF Configuration ================
+STATUS           = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1     = 0x65646f4e31 0x65646f4e32
+RX_ADDR_P2-5     = 0x33 0x00 0xc5 0xc6
+TX_ADDR          = 0xe7e7e7e7e7
+RX_PW_P0-6       = 0x20 0x20 0x20 0x20 0x00 0x00
+EN_AA            = 0x3f
+EN_RXADDR        = 0x0f
+RF_CH            = 0x6c
+RF_SETUP         = 0x27
+CONFIG           = 0x0e
+DYNPD/FEATURE    = 0x00 0x00
+Data Rate        = 250KBPS
+Model            = nRF24L01+
+CRC Length       = 16 bits
+PA Power         = PA_MAX
+Tue Sep  4 19:27:44 2018 - Message Recieved from Node 323103, Saving.
+Tue Sep  4 19:27:57 2018 - Message Recieved from Node 313103, Saving.
+
+Tue Sep  4 19:59:40 2018 - Message Recieved from Node 223003, Saving.
+Tue Sep  4 19:59:41 2018 - Message Recieved from Node 223003, Saving.

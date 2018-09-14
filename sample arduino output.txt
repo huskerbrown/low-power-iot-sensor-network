@@ -1,0 +1,40 @@
+Pinouts Arduino to NRF24L01+
+VIN or RAW -> Battery (+) - 3v for Pro Micro, 5v for Nano, others
+GND -> Battery (-)
+D2  -> GND = Closed -and- D2 -> <open> = Open
+GND -> [NRF24L01+] GND  (Pin 1)
+3V3 -> [NRF24L01+] VCC  (Pin 2)
+D7  -> [NRF24L01+] CE   (Pin 3)
+D8  -> [NRF24L01+] CSN  (Pin 4)
+D11 -> [NRF24L01+] MOSI (Pin 6)
+D12 -> [NRF24L01+] MISO (Pin 7)
+D13 -> [NRF24L01+] SCK  (Pin 5)
+A0  -> <reserved but not connected>
+
+No other Arduino pins needed
+No other NRF24L01+ pins needed
+Do no use Arduino pin A0 as it is used for sensing internal voltage to report remaining battery millivolts
+Other Arduino pins may be used as needed
+
+** Boot up complete **
+
+STATUS		 = 0x0e RX_DR=0 TX_DS=0 MAX_RT=0 RX_P_NO=7 TX_FULL=0
+RX_ADDR_P0-1	 = 0x65646f4e33 0xc2c2c2c2c2
+RX_ADDR_P2-5	 = 0xc3 0xc4 0xc5 0xc6
+TX_ADDR		 = 0x65646f4e33
+RX_PW_P0-6	 = 0x20 0x00 0x00 0x00 0x00 0x00
+EN_AA		 = 0x3f
+EN_RXADDR	 = 0x03
+RF_CH		 = 0x6c
+RF_SETUP	 = 0x27
+CONFIG		 = 0x0e
+DYNPD/FEATURE	 = 0x00 0x00
+Data Rate	 = 250KBPS
+Model		 = nRF24L01+
+CRC Length	 = 16 bits
+PA Power	 = PA_MAX
+Initializing Run...
+Node 3 is UNLOCKED with millivolts = 3352 remaining.
+Sending 313352...  ...Sent.
+Node 3 is UNLOCKED with millivolts = 3352 remaining.
+Sending 313352...  ...Sent.
