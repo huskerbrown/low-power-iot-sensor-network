@@ -1,5 +1,9 @@
-# Low-Power-Contact-Sensor-Network
-Using Arudino Mini Pro with LED and voltage regulator removed add battery powered remote contact sensors anywhere that send updates to a central Raspberry Pi for posting to your central inventory.
+# Ultra Low Power IoT Open/Close Sensor Gateway
+Using an Arudino Mini Pro with LED and voltage regulator removed along with an NRF24L01 (RF24) and a RaspberryPi, you can have a battery powered remote contact sensor anywhere you want that send open/closed state changes to a Raspberry Pi for posting to your central inventory.
+
+# Batteries
+I have had good luck using a single CR123A battery.  I got [these](https://www.amazon.com/gp/product/B075MBWJ36/ref=oh_aui_detailpage_o06_s00?ie=UTF8&psc=1) to power my Mini Pro and RF24L01+ and it has been working great; only using 1 milliamp per day.
+
 
 # High level notes
 Arduinos:
